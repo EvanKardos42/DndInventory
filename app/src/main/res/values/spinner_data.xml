@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spin_data">
+        <item>item type</item>
+        <item>Armor </item>
+        <item>Ammunition</item>
+        <item>Bag</item>
+        <item>Clothes</item>
+        <item>Consumable</item>
+        <item>Tools and Kits</item>
+        <item>Trinkets</item>
+        <item>Weapons</item>
+    </string-array>
+
+</resources>
