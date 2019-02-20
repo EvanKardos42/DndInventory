@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -62,9 +61,8 @@
             android:layout_marginEnd="20dp"
             android:ems="10"
             android:hint="@string/weight"
-            android:importantForAutofill="no"
             android:inputType="number"
-            tools:targetApi="o" />
+            tools:ignore="Autofill" />
 
         <EditText
             android:id="@+id/editText_AmountOfItem"
@@ -72,9 +70,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/amount"
-            android:importantForAutofill="no"
             android:inputType="number"
-            tools:ignore="UnusedAttribute" />
+            tools:ignore="Autofill" />
     </LinearLayout>
 
     <LinearLayout
@@ -142,20 +139,20 @@
 
     <EditText
         android:id="@+id/editText_describtion"
-        android:layout_width="360dp"
-        android:layout_height="294dp"
+        android:layout_width="357dp"
+        android:layout_height="59dp"
         android:layout_below="@+id/linearLayout_usesDice"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
-        android:autofillHints=" "
         android:ems="10"
         android:hint="@string/describtion"
         android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout_usesDice"
-        tools:targetApi="o" />
+        tools:ignore="Autofill" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
