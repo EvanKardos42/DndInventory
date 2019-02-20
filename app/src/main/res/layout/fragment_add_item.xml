@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editText_nameOfItem"
+        android:layout_width="323dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/Name"
+        android:importantForAutofill="no"
+        android:inputType="textAutoComplete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor"
+        tools:targetApi="o" />
+
+    <Spinner
+        android:id="@+id/spinner_item_type"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_nameOfItem"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_nameOfItem" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="329dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/spinner_item_type"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_item_type">
+
+        <EditText
+            android:id="@+id/editText_WeightOfItem"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="@string/weight"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/editText_AmountOfItem"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/amount"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            tools:ignore="UnusedAttribute" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_magical"
+        android:layout_width="344dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/linear_layout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/magical"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_isMagical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_usesDice"
+        android:layout_width="344dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/linearLayout_magical"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_magical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/dice"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/checkbox_dice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:hint="@string/hint_dice_format"
+            android:inputType="text"
+            tools:ignore="Autofill" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText_describtion"
+        android:layout_width="360dp"
+        android:layout_height="294dp"
+        android:layout_below="@+id/linearLayout_usesDice"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints=" "
+        android:ems="10"
+        android:hint="@string/describtion"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_usesDice"
+        tools:targetApi="o" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
