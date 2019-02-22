@@ -74,6 +74,7 @@
             tools:ignore="Autofill" />
     </LinearLayout>
 
+
     <LinearLayout
         android:id="@+id/linearLayout_magical"
         android:layout_width="344dp"
@@ -104,6 +105,7 @@
 
     </LinearLayout>
 
+    <!--
     <LinearLayout
         android:id="@+id/linearLayout_usesDice"
         android:layout_width="344dp"
@@ -136,22 +138,24 @@
             tools:ignore="Autofill" />
 
     </LinearLayout>
+    -->
 
     <EditText
         android:id="@+id/editText_describtion"
-        android:layout_width="357dp"
-        android:layout_height="59dp"
-        android:layout_below="@+id/linearLayout_usesDice"
+        android:layout_width="350dp"
+        android:layout_height="288dp"
+        android:layout_below="@+id/linearLayout_magical"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="@string/describtion"
         android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.577"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout_usesDice"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_magical"
         tools:ignore="Autofill" />
 
 

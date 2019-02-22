@@ -4,9 +4,10 @@
     <string name="item_type">item type</string>
     <string name="weight">Weight</string>
     <string name="amount">Amount</string>
-    <string name="describtion">Description, Propterties, and Type Of item</string>
+    <string name="describtion">Description, Propterties, and hit dice</string>
 
     <string name="hint_dice_format">Hit Dice: Ex "1d6"</string>
     <string name="magical">Magical item?</string>
     <string name="dice">Dice</string>
+    <string name="edit">Edit</string>
 </resources>
