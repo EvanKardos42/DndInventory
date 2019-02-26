@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".FragmentDisplayItems">
 
+
     <ExpandableListView
         android:id="@+id/expandListView_inventory"
         android:layout_width="match_parent"

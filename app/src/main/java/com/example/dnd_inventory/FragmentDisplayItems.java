@@ -7,12 +7,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 
 public class FragmentDisplayItems extends Fragment {
 
-    ExpandableListView listView;
+    private ExpandableListView listView;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,10 +21,10 @@ public class FragmentDisplayItems extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view=inflater.inflate(R.layout.fragment_display_items, container, false);
+        View view = inflater.inflate(R.layout.fragment_display_items, container, false);
         listView = view.findViewById(R.id.expandListView_inventory);
         return view;
     }
